@@ -46,6 +46,6 @@ for i,row in df.iterrows():
     for doc in list(j):
         # print(f"{business.lower()},{doc['name'].lower()},{difflib.SequenceMatcher(a=business.lower(), b=doc['name'].lower()).ratio()}")
         if difflib.SequenceMatcher(a=business.lower(), b=doc['name'].lower()).ratio() > 0.50:
-            print(f"{business},{sector},{code},{latitud},{longitud},{formatted_address},{dir_limpia},{cif},{nombre},{nombre_sin_punto},{tipo_estab},{point_of_sale_uuid},{business_uuid},{doc['city'] if 'city' in doc else 'ana'},{doc['country'] if 'country' in doc else 'nan'},{doc['code']},'{doc['name']}'")    
+            print(f"'{business}','{sector}','{code}',{latitud},{longitud},'{formatted_address}','{dir_limpia}','{cif}','{nombre}','{nombre_sin_punto}','{tipo_estab}','{point_of_sale_uuid}','{business_uuid}',{doc['city'] if 'city' in doc else 'ana'},{doc['country'] if 'country' in doc else 'nan'},{doc['code']},'{doc['name']}'")    
 
 connection.close()

@@ -30,7 +30,7 @@ name : ADIDASES WWW.ADIDAS.ES
 fs_Transaction -> 
 
 
--------------------- CAM~NAS ------------
+-------------------- CAMPA~NAS NaN ------------
 "Lidl",
 "Ikea",
 "Primor",
